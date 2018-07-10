@@ -65,11 +65,11 @@
         <OutArgument x:TypeArguments="ui:GenericValue">[str]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="ui:GenericValue">["This is a string"]</InArgument>
+        <InArgument x:TypeArguments="ui:GenericValue">["This is a string 1"]</InArgument>
       </Assign.Value>
     </Assign>
-    <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is a writeline" />
-    <sads:DebugSymbol.Symbol>d1FDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RDaGFuZ2VWYWx1ZVxNYWluLnhhbWwGOwNJDgIBAT8FRg4CAQRHBUd0AgECRDdESwIBB0E4QT0CAQVHXEdxAgED</sads:DebugSymbol.Symbol>
+    <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is a 111 writeline" />
+    <sads:DebugSymbol.Symbol>d0xDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RDaGFuZ2VWYWx1ZS54YW1sBjsDSQ4CAQE/BUYOAgEERwVHeAIBAkQ3RE0CAQdBOEE9AgEFR1xHdQIBAw==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -82,7 +82,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="304,365" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="304,445" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

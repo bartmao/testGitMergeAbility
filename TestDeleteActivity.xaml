@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestDeleteActivity" mva:VisualBasic.Settings="{x:Null}"
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestDeleteActivity" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="TestDeleteActivity_1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
@@ -52,36 +52,19 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestDeleteActivity">
-    <Sequence DisplayName="Sequence - 1">
-      <WriteLine DisplayName="Write line" Text="This is sequence 1" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
-      <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
+  <Sequence DisplayName="TestDeleteActivity" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Sequence - 1" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is sequence 1" />
     </Sequence>
-    <Sequence DisplayName="Sequence - 2">
-      <WriteLine DisplayName="Write line" Text="This is sequence 2" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
-      <sap2010:WorkflowViewState.IdRef>Sequence_2</sap2010:WorkflowViewState.IdRef>
+    <Sequence DisplayName="Sequence - 3" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="This is sequence 3" />
     </Sequence>
-    <Sequence DisplayName="Sequence - 3">
-      <WriteLine DisplayName="Write line" Text="This is sequence 3" sap2010:WorkflowViewState.IdRef="WriteLine_3" />
-      <sap2010:WorkflowViewState.IdRef>Sequence_3</sap2010:WorkflowViewState.IdRef>
-    </Sequence>
-    <sap2010:WorkflowViewState.IdRef>Sequence_4</sap2010:WorkflowViewState.IdRef>
-    <sads:DebugSymbol.Symbol>d09DOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3REZWxldGVBY3Rpdml0eS54YW1sCjcDRg4CAQE4BTsQAgEIPAU/EAIBBUAFQxACAQI5Bzl1AgEJPQc9dQIBBkEHQXUCAQM5MDlEAgEKPTA9RAIBB0EwQUQCAQQ=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d09DOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3REZWxldGVBY3Rpdml0eS54YW1sBzcDPw4CAQE4BToQAgEFOwU9EAIBAjkHOXUCAQY8Bzx1AgEDOV45cgIBBzxePHICAQQ=</sads:DebugSymbol.Symbol>
   </Sequence>
-  <sap2010:WorkflowViewState.IdRef>TestDeleteActivity_1</sap2010:WorkflowViewState.IdRef>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,185">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="232,185">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -97,14 +80,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="254,759">
+      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="254,534">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TestDeleteActivity_1" sap:VirtualizedContainerService.HintSize="294,879" />
+      <sap2010:ViewStateData Id="TestDeleteActivity_1" sap:VirtualizedContainerService.HintSize="294,774" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestMixedCases" mva:VisualBasic.Settings="{x:Null}"
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestMixedCases"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
@@ -8,6 +8,14 @@
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+    <x:Property Name="argument2" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>TestMixedCases_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -52,17 +60,19 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestMixedCases">
-    <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
-    <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
-    <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
-    <sads:DebugSymbol.Symbol>d0tDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RNaXhlZENhc2VzLnhhbWwDNwM8DgIBATgFOFkCAQM5BTlZAgEC</sads:DebugSymbol.Symbol>
+  <Sequence DisplayName="TestMixedCases" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="variable2" />
+    </Sequence.Variables>
+    <WriteLine DisplayName="Write line 1" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="test2" />
+    <WriteLine DisplayName="Write line 2" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="test 1" />
+    <sads:DebugSymbol.Symbol>d0tDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RNaXhlZENhc2VzLnhhbWwFPwNHDgIBAUQFRGgCAQRFBUVpAgECRF5EZQIBBUVeRWYCAQM=</sads:DebugSymbol.Symbol>
   </Sequence>
-  <sap2010:WorkflowViewState.IdRef>TestMixedCases_1</sap2010:WorkflowViewState.IdRef>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,286">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -70,7 +80,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TestMixedCases_1" sap:VirtualizedContainerService.HintSize="272,406" />
+      <sap2010:ViewStateData Id="TestMixedCases_1" sap:VirtualizedContainerService.HintSize="272,606" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

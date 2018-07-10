@@ -53,28 +53,19 @@
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TestChangePosition" sap2010:WorkflowViewState.IdRef="Sequence_3">
-    <Sequence DisplayName="Sequence - 1" sap2010:WorkflowViewState.IdRef="Sequence_1">
-      <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is sequence 1" />
-    </Sequence>
     <Sequence DisplayName="Sequence - 2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="This is sequence 2" />
     </Sequence>
     <Sequence DisplayName="Sequence - 3" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="This is sequence 3" />
     </Sequence>
+    <Sequence DisplayName="Sequence - 1" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <WriteLine DisplayName="Write line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is sequence 1" />
+    </Sequence>
     <sads:DebugSymbol.Symbol>d09DOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RDaGFuZ2VQb3NpdGlvbi54YW1sCjcDQg4CAQE4BToQAgEIOwU9EAIBBT4FQBACAQI5Bzl1AgEJPAc8dQIBBj8HP3UCAQM5XjlyAgEKPF48cgIBBz9eP3ICAQQ=</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,185">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="232,185">
         <sap:WorkflowViewStateService.ViewState>
@@ -92,6 +83,15 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,185">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="254,759">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -99,7 +99,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TestChangePosition_1" sap:VirtualizedContainerService.HintSize="294,839" />
+      <sap2010:ViewStateData Id="TestChangePosition_1" sap:VirtualizedContainerService.HintSize="294,959" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

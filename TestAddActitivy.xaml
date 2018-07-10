@@ -56,21 +56,23 @@
     <WriteLine DisplayName="Write line 1" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is writeline 1" />
     <WriteLine DisplayName="Write line 2" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="This is writeline 2" />
     <WriteLine DisplayName="Write line 3" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="This is writeline 3" />
-    <sads:DebugSymbol.Symbol>d0xDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RBZGRBY3RpdGl2eS54YW1sBzcDPA4CAQE4BTh2AgEGOQU5dgIBBDoFOnYCAQI4XjhzAgEHOV45cwIBBTpeOnMCAQM=</sads:DebugSymbol.Symbol>
+    <WriteLine DisplayName="Write line 3" Text="This is writeline 4" sap2010:WorkflowViewState.IdRef="WriteLine_4" />
+    <sads:DebugSymbol.Symbol>d0xDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RBZGRBY3RpdGl2eS54YW1sCTcDPQ4CAQE4BTh2AgEIOQU5dgIBBjoFOnYCAQQ7BTt2AgECOF44cwIBCTleOXMCAQc6XjpzAgEFOzA7RQIBAw==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="WriteLine_3" sap:VirtualizedContainerService.HintSize="210,61" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,387">
+      <sap2010:ViewStateData Id="WriteLine_4" sap:VirtualizedContainerService.HintSize="210,61" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,488">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TestAddActitivy_1" sap:VirtualizedContainerService.HintSize="272,467" />
+      <sap2010:ViewStateData Id="TestAddActitivy_1" sap:VirtualizedContainerService.HintSize="272,568" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

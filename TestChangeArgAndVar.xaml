@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestChangeArgAndVar"
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TestChangeArgAndVar" this:TestChangeArgAndVar.arg1="1" this:TestChangeArgAndVar.arg2="arg2"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
@@ -7,9 +7,10 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:this="clr-namespace:"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="arg1" Type="InArgument(x:String)" />
+    <x:Property Name="arg1" Type="InArgument(x:Int32)" />
     <x:Property Name="arg2" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
@@ -58,14 +59,17 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TestChangeArgAndVar" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="var1" />
-      <Variable x:TypeArguments="x:String" Name="var2" />
+      <Variable x:TypeArguments="x:String" Default="var1" Name="var1" />
+      <Variable x:TypeArguments="x:String" Default="var2" Name="var2" />
     </Sequence.Variables>
-    <sads:DebugSymbol.Symbol>d1BDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RDaGFuZ2VBcmdBbmRWYXIueGFtbAE/A0UOAgEB</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d1BDOlxVc2Vyc1xibWFvMDAyXERlc2t0b3BcTmV3IGZvbGRlclx0ZXN0R2l0TWVyZ2VBYmlsaXR5XFRlc3RDaGFuZ2VBcmdBbmRWYXIueGFtbAUBiQEBjgEBAwFnAWkBAkMDSQ4CAQFFNEU6AgEDRjRGOgIBAg==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -76,7 +80,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TestChangeArgAndVar_1" sap:VirtualizedContainerService.HintSize="240,179" />
+      <sap2010:ViewStateData Id="TestChangeArgAndVar_1" sap:VirtualizedContainerService.HintSize="240,259" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
